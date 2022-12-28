@@ -17,7 +17,6 @@ public class Utils {
   }
 
   public static String createPayin(String amount, String description) {
-
     RestAssured.baseURI = "https://api.qafinmo.net";
     String response = given().auth().preemptive().basic(uname, pass).header("Content-Type", "application/json")
         .body("{\r\n" + "  \"amount\": " + Integer.parseInt(amount) + ",\r\n" + "  \"currency\": \"AUD\",\r\n"

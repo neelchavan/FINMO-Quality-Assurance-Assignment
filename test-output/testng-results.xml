@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-28T11:42:50 IST" name="Suite" finished-at="2022-12-28T11:43:11 IST" duration-ms="21669">
+  <suite started-at="2022-12-29T12:33:00 IST" name="Suite" finished-at="2022-12-29T12:33:16 IST" duration-ms="16236">
     <groups>
     </groups>
-    <test started-at="2022-12-28T11:42:50 IST" name="Test" finished-at="2022-12-28T11:43:11 IST" duration-ms="21669">
+    <test started-at="2022-12-29T12:33:00 IST" name="Test" finished-at="2022-12-29T12:33:16 IST" duration-ms="16236">
       <class name="tests.GetPayinApi">
-        <test-method signature="verifyGetPayinApi()[pri:7, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-28T11:43:06 IST" name="verifyGetPayinApi" description="getting payin via id" finished-at="2022-12-28T11:43:08 IST" duration-ms="1770" status="PASS">
+        <test-method signature="verifyGetPayinApi()[pri:1, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-29T12:33:11 IST" name="verifyGetPayinApi" description="getting payin via id" finished-at="2022-12-29T12:33:13 IST" duration-ms="1715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetPayinApi -->
-        <test-method signature="verifyResponsePayload()[pri:8, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-28T11:43:08 IST" name="verifyResponsePayload" description="verify the response payload for get payin api" finished-at="2022-12-28T11:43:10 IST" duration-ms="2152" status="PASS">
+        <test-method signature="verifyResponsePayload()[pri:2, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-29T12:33:13 IST" name="verifyResponsePayload" description="verify the response payload for get payin api" finished-at="2022-12-29T12:33:15 IST" duration-ms="1741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResponsePayload -->
-        <test-method signature="verifyInvalidGetRequest()[pri:9, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-28T11:43:10 IST" name="verifyInvalidGetRequest" description="verify if the api can handle incorrect get request" finished-at="2022-12-28T11:43:11 IST" duration-ms="700" status="PASS">
+        <test-method signature="verifyInvalidGetRequest()[pri:3, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-29T12:33:15 IST" name="verifyInvalidGetRequest" description="verify if the api can handle incorrect get request" finished-at="2022-12-29T12:33:16 IST" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidGetRequest -->
-        <test-method signature="verifyGetApiWithoutAuth()[pri:10, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-28T11:43:11 IST" name="verifyGetApiWithoutAuth" description="verify if the api should not complete the get request without authorization" finished-at="2022-12-28T11:43:11 IST" duration-ms="695" status="PASS">
+        <test-method signature="verifyGetApiWithoutAuth()[pri:4, instance:tests.GetPayinApi@fba92d3]" started-at="2022-12-29T12:33:16 IST" name="verifyGetApiWithoutAuth" description="verify if the api should not complete the get request without authorization" finished-at="2022-12-29T12:33:16 IST" duration-ms="703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGetApiWithoutAuth -->
       </class> <!-- tests.GetPayinApi -->
       <class name="tests.CreatePayinApi">
-        <test-method signature="createPayin()[pri:1, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-28T11:42:50 IST" name="createPayin" description="verify if user can create payin" finished-at="2022-12-28T11:42:58 IST" duration-ms="8686" status="PASS">
+        <test-method signature="createPayin()[pri:1, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-29T12:33:00 IST" name="createPayin" description="verify if user can create payin" finished-at="2022-12-29T12:33:06 IST" duration-ms="6027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPayin -->
-        <test-method signature="verifyPayinWithoutAuth()[pri:2, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-28T11:42:58 IST" name="verifyPayinWithoutAuth" description="verify user should not be able to create payin without authorization" finished-at="2022-12-28T11:42:59 IST" duration-ms="728" status="PASS">
+        <test-method signature="verifyPayinWithoutAuth()[pri:2, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-29T12:33:06 IST" name="verifyPayinWithoutAuth" description="verify user should not be able to create payin without authorization" finished-at="2022-12-29T12:33:07 IST" duration-ms="748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPayinWithoutAuth -->
-        <test-method signature="verifyLargePayment()[pri:3, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-28T11:42:59 IST" name="verifyLargePayment" description="verify user should not be able to create payin with very large payment amount" finished-at="2022-12-28T11:43:00 IST" duration-ms="1264" status="PASS">
+        <test-method signature="verifyLargePayment()[pri:3, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-29T12:33:07 IST" name="verifyLargePayment" description="verify user should not be able to create payin with very large payment amount" finished-at="2022-12-29T12:33:08 IST" duration-ms="812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLargePayment -->
-        <test-method signature="verifyMandatoryFieldsOfApi()[pri:4, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-28T11:43:00 IST" name="verifyMandatoryFieldsOfApi" description="verifying invalid inputs" finished-at="2022-12-28T11:43:01 IST" duration-ms="731" status="PASS">
+        <test-method signature="verifyMandatoryFieldsOfApi()[pri:4, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-29T12:33:08 IST" name="verifyMandatoryFieldsOfApi" description="verifying invalid inputs" finished-at="2022-12-29T12:33:09 IST" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMandatoryFieldsOfApi -->
-        <test-method signature="verifyCreatePayinApiResBody()[pri:5, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-28T11:43:01 IST" name="verifyCreatePayinApiResBody" description="verify the response body on creating the api" finished-at="2022-12-28T11:43:05 IST" duration-ms="3879" status="PASS">
+        <test-method signature="verifyCreatePayinApiResBody()[pri:5, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-29T12:33:09 IST" name="verifyCreatePayinApiResBody" description="verify the response body on creating the api" finished-at="2022-12-29T12:33:11 IST" duration-ms="2165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreatePayinApiResBody -->
-        <test-method signature="verifyNonAcceptableCurrency()[pri:6, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-28T11:43:05 IST" name="verifyNonAcceptableCurrency" description="verify if the api can handle non acceptable currency" finished-at="2022-12-28T11:43:06 IST" duration-ms="889" status="PASS">
+        <test-method signature="verifyNonAcceptableCurrency()[pri:6, instance:tests.CreatePayinApi@759d26fb]" started-at="2022-12-29T12:33:11 IST" name="verifyNonAcceptableCurrency" description="verify if the api can handle non acceptable currency" finished-at="2022-12-29T12:33:11 IST" duration-ms="728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNonAcceptableCurrency -->

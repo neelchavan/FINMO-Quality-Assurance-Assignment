@@ -11,11 +11,13 @@ public class GetPayinApi {
   String username = Utils.getUname();
   String password = Utils.getPass();
 
+  // Tests
+
   // 1. create payin -> retreive payin_id -> hit getpayin api -> verify json
   // response.
   // verify on giving the correct payin id user should get the correct payment
   // details
-  @Test(description = "getting payin via id", priority = 7)
+  @Test(description = "getting payin via id", priority = 1)
   public void verifyGetPayinApi() {
     RestAssured.baseURI = "https://api.qafinmo.net";
     String response = Utils.createPayin("499", "hiking");
@@ -28,7 +30,7 @@ public class GetPayinApi {
   }
 
   // 2. verify the response payload for get payin api
-  @Test(description = "verify the response payload for get payin api", priority = 8)
+  @Test(description = "verify the response payload for get payin api", priority = 2)
   public void verifyResponsePayload() {
     RestAssured.baseURI = "https://api.qafinmo.net";
     String response = Utils.createPayin("5999", "lunch");
@@ -51,7 +53,7 @@ public class GetPayinApi {
   }
 
   // 3. verify if the api can handle incorrect get request
-  @Test(description = "verify if the api can handle incorrect get request", priority = 9)
+  @Test(description = "verify if the api can handle incorrect get request", priority = 3)
   public void verifyInvalidGetRequest() {
     RestAssured.baseURI = "https://api.qafinmo.net";
     String invalidId = "payin_2b8a6d481b8349928845ec607a15e458ss";
@@ -62,7 +64,7 @@ public class GetPayinApi {
 
   // 4. verify if the api should not complete the get request without
   // authorization
-  @Test(description = "verify if the api should not complete the get request without authorization", priority = 10)
+  @Test(description = "verify if the api should not complete the get request without authorization", priority = 4)
   public void verifyGetApiWithoutAuth() {
     RestAssured.baseURI = "https://api.qafinmo.net";
     String payin_id = "payin_2b8a6d481b8349928845ec607a15e458";

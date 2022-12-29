@@ -12,6 +12,8 @@ public class CreatePayinApi {
   static String username = Utils.getUname();
   static String password = Utils.getPass();
 
+  // Tests 
+  
   // 1. verify if user can create payin
   @Test(description = "verify if user can create payin", priority = 1)
   public void createPayin() {
